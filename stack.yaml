@@ -7,7 +7,7 @@ extra-deps:
 # - ./vendor/replica
 # - ./vendor/concur-core
 - git: https://github.com/pkamenarsky/replica.git
-  commit: c0046ff9b3be5e20e5306de743b83620cf59c6a9
+  commit: 1d76ef284c3308b16618f20194b58f81946ce09a
 - git: https://github.com/pkamenarsky/concur.git
   commit: dc5347b35c79654d58fa95716f425ee7248504fb
   subdirs:
