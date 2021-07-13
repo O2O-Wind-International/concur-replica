@@ -1,4 +1,5 @@
-resolver: lts-13.19
+resolver:
+  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/0.yaml
 packages:
 - .
 extra-deps:
@@ -6,10 +7,15 @@ extra-deps:
 # - ./vendor/replica
 # - ./vendor/concur-core
 - git: https://github.com/pkamenarsky/replica.git
-  commit: 46d2fd3b2c236d573f1d6002eb58cc95b2ba03b9
+  commit: c0046ff9b3be5e20e5306de743b83620cf59c6a9
 - git: https://github.com/pkamenarsky/concur.git
   commit: dc5347b35c79654d58fa95716f425ee7248504fb
   subdirs:
     - concur-core
 flags: {}
 extra-package-dbs: []
+nix:
+  enable: true
+  packages:
+    - "zlib"
+  pure: false
