@@ -202,3 +202,18 @@ onDragLeave = Props "onDragLeave" (PropEvent (extractResult . A.fromJSON . getDO
 -- | https://developer.mozilla.org/en-US/docs/Web/Events/drag
 onDrag :: Props MouseEvent
 onDrag = Props "onDrag" (PropEvent (extractResult . A.fromJSON . getDOMEvent))
+
+
+data FileLoadEvent = FileLoadEvent
+  { fileName    :: T.Text
+  , fileContent :: T.Text
+  }
+
+instance A.FromJSON FileLoadEvent where
+  parseJSON obj@(A.Object o) = FileLoadEvent
+    <$> o .:  "name"
+    <*> o .:  "content"
+  parseJSON _ = fail "Expected object"
+
+onFileLoad :: Props FileLoadEvent
+onFileLoad = Props "fileLoad" (PropEvent (extractResult . A.fromJSON . getDOMEvent))
