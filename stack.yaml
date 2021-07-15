@@ -7,7 +7,7 @@ extra-deps:
 # - ./vendor/replica
 # - ./vendor/concur-core
 - git: https://github.com/O2O-Wind-International/replica.git
-  commit: 685225e5cb5a0199a9def93957e2cf3930de818e
+  commit: a3d6939f8dfc15d2a9a34f85fbfd82c98c3d3a07
 - git: https://github.com/pkamenarsky/concur.git
   commit: dc5347b35c79654d58fa95716f425ee7248504fb
   subdirs:

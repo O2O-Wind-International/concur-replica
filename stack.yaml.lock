@@ -17,11 +17,11 @@ packages:
     git: https://github.com/O2O-Wind-International/replica.git
     pantry-tree:
       size: 1319
-      sha256: 061b1fd59b3309a8312b023630134841c72e0bdc0190ac584310448d10db2d12
-    commit: 685225e5cb5a0199a9def93957e2cf3930de818e
+      sha256: 5a2006729d21b1c7f4983b8b62384b0bac1100b1889e73ac3acc703bbc7c2348
+    commit: a3d6939f8dfc15d2a9a34f85fbfd82c98c3d3a07
   original:
     git: https://github.com/O2O-Wind-International/replica.git
-    commit: 685225e5cb5a0199a9def93957e2cf3930de818e
+    commit: a3d6939f8dfc15d2a9a34f85fbfd82c98c3d3a07
 - completed:
     subdir: concur-core
     name: concur-core

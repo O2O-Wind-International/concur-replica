@@ -216,4 +216,4 @@ instance A.FromJSON FileLoadEvent where
   parseJSON _ = fail "Expected object"
 
 onFileLoad :: Props FileLoadEvent
-onFileLoad = Props "fileLoad" (PropEvent (extractResult . A.fromJSON . getDOMEvent))
+onFileLoad = Props "onFileLoad" (PropEvent (extractResult . A.fromJSON . getDOMEvent))
